@@ -1,0 +1,15 @@
+com\DKP\utilities\ExcelReader.class
+com\DKP\utilities\DbManager.class
+com\DKP\utilities\ScreenshotUtil.class
+com\DKP\extentlisteners\ExtentManager.class
+com\DKP\testcases\BankManagerLoginTest.class
+com\DKP\testcases\AddCustomerTest.class
+com\DKP\utilities\DataUtil.class
+com\DKP\testcases\OpenAccountTest.class
+com\DKP\extentlisteners\ExtentListeners.class
+com\DKP\base\TestBase.class
+com\DKP\utilities\MonitoringMail$SMTPAuthenticator.class
+com\DKP\testcases\ValidateCustomers.class
+com\DKP\utilities\MonitoringMail.class
+com\DKP\utilities\TestConfig.class
+com\DKP\rough\TestProperties.class
