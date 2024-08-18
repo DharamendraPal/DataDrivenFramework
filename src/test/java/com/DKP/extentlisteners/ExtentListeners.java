@@ -139,7 +139,7 @@ public class ExtentListeners extends TestBase implements ITestListener,ISuiteLis
 		 
 		try {
 			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
-					+ ":8080/job/DataDrivenProject/Extent_20Report/";
+					+ ":8080/job/DataDrivenFramework/Extent_20Report/";
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

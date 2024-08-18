@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.098">
+           time="3.194">
   <properties />
   
   
-            <testcase name="customerloginTest" time="4.098" classname="com.DKP.testcases.CustomerLogin" />
+            <testcase name="customerloginTest" time="3.194" classname="com.DKP.testcases.CustomerLogin" />
       
 </testsuite>

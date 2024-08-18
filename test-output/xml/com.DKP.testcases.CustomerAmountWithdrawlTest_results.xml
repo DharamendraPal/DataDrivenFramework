@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="60.646">
+           time="58.960">
   <properties />
   
   
-            <testcase name="amountwithdrawlTest" time="21.633" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
-                <testcase name="amountwithdrawlTest" time="15.445" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
-                <testcase name="amountwithdrawlTest" time="23.568" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+            <testcase name="amountwithdrawlTest" time="23.042" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+                <testcase name="amountwithdrawlTest" time="14.894" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+                <testcase name="amountwithdrawlTest" time="21.024" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
       
 </testsuite>

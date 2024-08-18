@@ -30,7 +30,6 @@ public class OpenAccount extends TestBase {
 		String[] arr= AcntOpeningMsg.split(":");
 		//AccountNumber=Integer.parseInt(arr[1]);
 		AccountNumber=arr[1];
-		System.out.println(AccountNumber);
 		alert.accept();
 		Thread.sleep(2000);
 		//Assert.fail("Open Account Test failed");
