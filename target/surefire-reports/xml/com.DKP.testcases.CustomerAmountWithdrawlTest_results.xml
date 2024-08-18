@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Customers Amount Withdrawl Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="59.097">
+  <properties />
+  
+  
+            <testcase name="amountwithdrawlTest" time="14.968" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+                <testcase name="amountwithdrawlTest" time="21.058" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+                <testcase name="amountwithdrawlTest" time="23.071" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+      
+</testsuite>
