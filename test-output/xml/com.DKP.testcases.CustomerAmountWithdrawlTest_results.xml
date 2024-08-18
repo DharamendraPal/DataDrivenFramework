@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Customers Amount Withdrawl Test"
-           tests="1"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="6.813">
+           time="60.646">
   <properties />
   
   
-            <testcase name="amountwithdrawlTest" time="6.813" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+            <testcase name="amountwithdrawlTest" time="21.633" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+                <testcase name="amountwithdrawlTest" time="15.445" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
+                <testcase name="amountwithdrawlTest" time="23.568" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" />
       
 </testsuite>

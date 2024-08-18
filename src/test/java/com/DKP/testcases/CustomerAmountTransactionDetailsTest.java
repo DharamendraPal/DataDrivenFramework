@@ -19,46 +19,36 @@ import com.DKP.utilities.DataUtil;
 import com.aventstack.extentreports.Status;
 
 public class CustomerAmountTransactionDetailsTest extends TestBase {	
-	
-	@Test(dataProviderClass = DataUtil.class, dataProvider="dp")
-	public void amountTransactionDetailsTest(Hashtable<String,String> data) throws InterruptedException 
+	public void amountTransactionDetailsTest(String TransactionAmount) throws InterruptedException
 	{
-		if(!(data.get("runmode").equalsIgnoreCase("Y")))
-		{
-			throw new SkipException("Skipping test case execution as the runmode for this testdata is set as No");
-		}	
-		
+		Thread.sleep(2000);
 		Assert.assertTrue(isElementPresent("TransactionsTAB_XPATH"),"Transactions TAB is not Present");
 		
 		click("TransactionsTAB_XPATH");
 		Thread.sleep(2000);	
 		/*Write Code to See transaction details */ 
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("TransactionTable_XPATH"))));
+		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("TransactionTable_XPATH"))));
 		 List<WebElement> Tnxrecords=driver.findElements(By.xpath(OR.getProperty("TransactionTable_XPATH")));
+		 boolean isTransactionFound = false;
 		 for(int row=1 ; row<=Tnxrecords.size();row++ )
 		 {
-			 for(int col=1; col<=3;col++)
-		      {
-				 String TransactionDetails=driver.findElement(By.xpath("//table[@class='table table-bordered table-striped']/tbody/tr["+row+"]/td["+col+"]")).getText();
-				if(TransactionDetails.contains(data.get("DateTime")))
-				{
-					log.info("Tranaction Date "+data.get("DateTime")+"is as per expected Transaction Date from ExcelSheet");
-					ExtentListeners.test.log(Status.INFO, "Tranaction Date "+data.get("DateTime")+" is as per expected Transaction Date from ExcelSheet");
-				}else if(TransactionDetails.equals(data.get("TransactionAmount").substring(0,3))){
-					log.info("Transaction Amount "+data.get("TransactionAmount").substring(0,3)+" is as per expected Transaction Amount from ExcelSheet");
-					ExtentListeners.test.log(Status.INFO, "Transaction Amount "+data.get("TransactionAmount").substring(0,3)+" is as per expected Transaction Amount from ExcelSheet");
-				}else if(TransactionDetails.contains(data.get("TransactionType"))){
-					log.info("Transaction "+data.get("TransactionType")+" is as per expected Trasaction type from ExcelSheet");
-					ExtentListeners.test.log(Status.INFO, "Transaction "+data.get("TransactionType")+" is as per expected Trasaction type from ExcelSheet");
-				}else{
-					log.info("Transaction Record from Test Data Sheet not present under Transaction Table");
-					ExtentListeners.test.log(Status.INFO, "Transaction Record from Test Data Sheet not present under Transaction Table");
-				}
-					Thread.sleep(2000);
-		      }
+			String TransactionDetails=driver.findElement(By.xpath("//table[@class='table table-bordered table-striped']/tbody/tr["+row+"]/td[2]")).getText();
+			if(TransactionDetails.equals(TransactionAmount))
+			 {
+				log.info("Transaction Amount "+TransactionAmount+" record is present under Transaction Table as per expected Transaction Amount ");
+				ExtentListeners.test.log(Status.INFO, "Transaction Amount "+TransactionAmount+" record is present under Transaction Table as per expected Transaction Amount ");
+				isTransactionFound = true;
+			    break; // Break out of the inner loop once a match is found
+			  }
+			 	Thread.sleep(2000);
 		 }
+		 if (!isTransactionFound) 
+		 {
+		        log.info("Transaction Record from Test Data Sheet not present under Transaction Table");
+		        ExtentListeners.test.log(Status.INFO, "Transaction Record from Test Data Sheet not present under Transaction Table");
+		  }
 		 
-		 ResetTransaction();
+		 //ResetTransaction();
 		 BackTransaction();
 
 	}

@@ -14,6 +14,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -229,7 +230,27 @@ public class TestBase {
 			if (Config.getProperty("browser").equals("chrome")) {
 
 				// WebDriverManager.chromedriver().setup();---in selenium 4 this step not required
-				driver = new ChromeDriver();
+				// Create ChromeOptions instance
+		        ChromeOptions options = new ChromeOptions();
+				// Add arguments to disable the default browser check
+				options.addArguments("--no-default-browser-check");
+		        options.addArguments("--disable-default-apps");
+		        options.addArguments("--no-first-run");
+		        options.addArguments("--disable-popup-blocking");
+		        options.addArguments("--disable-infobars");
+		        options.addArguments("--disable-notifications");
+		        options.addArguments("--disable-extensions");
+		        options.addArguments("--disable-component-extensions-with-background-pages");
+		        options.addArguments("--disable-background-networking");
+		        options.addArguments("--disable-sync");
+		        options.addArguments("--disable-translate");
+		        options.addArguments("--disable-default-browser-check");
+		        
+		        // Path to your user profile
+		        //String userProfile = "C:\\Users\\HareKrishna\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 2";
+		       //options.addArguments("user-data-dir=" + userProfile);
+		        // Initialize ChromeDriver with the options
+				driver = new ChromeDriver(options);
 				log.info("Chrome Browser Launched !!!");
 			} else if (Config.getProperty("browser").equals("firefox")) {
 

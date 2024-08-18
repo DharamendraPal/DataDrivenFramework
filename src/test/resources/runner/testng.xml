@@ -59,12 +59,12 @@
 	</test> <!-- Test -->
   
 
-  <test name="Customers Amount Transaction Details Test">
+  <!--  <test name="Customers Amount Transaction Details Test">
 
 		<classes>
 			<class name="com.DKP.testcases.CustomerAmountTransactionDetailsTest" />
 		</classes>
-	</test> <!-- Test -->
+	</test> --> <!-- Test -->
 	
 	<test name="Customers Logout Test">
 

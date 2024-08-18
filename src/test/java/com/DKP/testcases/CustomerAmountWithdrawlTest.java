@@ -37,14 +37,17 @@ public class CustomerAmountWithdrawlTest extends TestBase {
 		Assert.assertTrue(isElementPresent("WithdrawlTab_XPATH"),"Withdrawl TAB is not Present");
 		click("WithdrawlTab_XPATH");
 		Thread.sleep(2000);
-		type("AmountWithdrawl_XPATH",data.get("WithDrawlAmount"));
+		type("AmountWithdrawl_XPATH",data.get("TransactionAmount"));
 		Thread.sleep(2000);
 		click("WithdrawButton_XPATH");
 		
 		String WithdrawlTransactionMessage=driver.findElement(By.xpath(OR.getProperty("WithDrawSuccess_XPATH"))).getText();
 		Assert.assertTrue(WithdrawlTransactionMessage.contains("Transaction successful"));
-		log.info("Amount "+data.get("WithDrawlAmount")+ "Withdrawn successfully");
-		ExtentListeners.test.log(Status.INFO, "Amount "+data.get("WithDrawlAmount")+ "withdrawn Successfully");
+		log.info("Amount "+data.get("TransactionAmount")+ "Withdrawn successfully");
+		ExtentListeners.test.log(Status.INFO, "Amount "+data.get("TransactionAmount")+ "withdrawn Successfully");
 		Thread.sleep(2000);
+		new CustomerAmountTransactionDetailsTest().amountTransactionDetailsTest(data.get("TransactionAmount").substring(0,3));
+		
 	}
+	
 }

@@ -33,14 +33,16 @@ public class CustomerAmountDepositTest extends TestBase {
 		/*Depositing Amount*/
 		Assert.assertTrue(isElementPresent("DepositTab_XPATH"),"Deposit TAB is not Present");
 		click("DepositTab_XPATH");
-		type("AmountDeposit_XPATH",data.get("DepositAmount"));
+		type("AmountDeposit_XPATH",data.get("TransactionAmount"));
 		click("DepositButton_XPATH");
 		Thread.sleep(2000);
 		String DepositMessage=driver.findElement(By.xpath(OR.getProperty("DepositSuccess_XPATH"))).getText();
 		Assert.assertTrue(DepositMessage.contains("Deposit Successful"));
-		log.info("Amount "+data.get("DepositAmount")+ "Deposit Successful");
-		ExtentListeners.test.log(Status.INFO, "Amount "+data.get("DepositAmount")+ "Deposit Successful");
+		log.info("Amount "+data.get("TransactionAmount")+ "Deposit Successful");
+		ExtentListeners.test.log(Status.INFO, "Amount "+data.get("TransactionAmount")+ "Deposit Successful");
 		Thread.sleep(2000);
+		
+		new CustomerAmountTransactionDetailsTest().amountTransactionDetailsTest(data.get("TransactionAmount").substring(0,3));
 	}
 	
 	public  void ValidateSelectAccount(){

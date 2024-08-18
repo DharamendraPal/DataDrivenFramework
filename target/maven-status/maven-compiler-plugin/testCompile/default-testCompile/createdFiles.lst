@@ -3,6 +3,7 @@ com\DKP\testcases\Customers.class
 com\DKP\testcases\CustomerAmountWithdrawlTest.class
 com\DKP\rough\ABC.class
 com\DKP\testcases\CustomerAmountDepositTest.class
+com\DKP\rough\CustomerAmountTransactionDetailsTest_OldCopy.class
 com\DKP\testcases\OpenAccount.class
 com\DKP\base\TestBase.class
 com\DKP\testcases\CustomerLogoutTest.class

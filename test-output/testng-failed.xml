@@ -6,15 +6,26 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.DKP.extentlisteners.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Customers Amount Transaction Details Test(failed)">
+  <test thread-count="5" name="Customers Amount Deposit Test(failed)">
     <classes>
-      <class name="com.DKP.testcases.CustomerAmountTransactionDetailsTest">
+      <class name="com.DKP.testcases.CustomerAmountDepositTest">
         <methods>
-          <include name="amountTransactionDetailsTest" invocation-numbers="1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="amountDepositTest" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.DKP.testcases.CustomerAmountTransactionDetailsTest -->
+      </class> <!-- com.DKP.testcases.CustomerAmountDepositTest -->
     </classes>
-  </test> <!-- Customers Amount Transaction Details Test(failed) -->
+  </test> <!-- Customers Amount Deposit Test(failed) -->
+  <test thread-count="5" name="Customers Amount Withdrawl Test(failed)">
+    <classes>
+      <class name="com.DKP.testcases.CustomerAmountWithdrawlTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="amountwithdrawlTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.DKP.testcases.CustomerAmountWithdrawlTest -->
+    </classes>
+  </test> <!-- Customers Amount Withdrawl Test(failed) -->
 </suite> <!-- Failed suite [Data Driven Basics] -->
