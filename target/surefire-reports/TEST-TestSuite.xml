@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="40.424" tests="13" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="43.817" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.21+9-LTS-193"/>
@@ -65,17 +65,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="bankmanagerloginTest" classname="com.DKP.testcases.BankManagerLogin" time="0.765"/>
-  <testcase name="addCustomerTest" classname="com.DKP.testcases.AddCustomer" time="3.104"/>
-  <testcase name="addCustomerTest" classname="com.DKP.testcases.AddCustomer" time="3.292"/>
-  <testcase name="openAccountTest" classname="com.DKP.testcases.OpenAccount" time="3.517"/>
-  <testcase name="Validatecustomers" classname="com.DKP.testcases.Customers" time="2.857"/>
-  <testcase name="customerloginTest" classname="com.DKP.testcases.CustomerLogin" time="2.674"/>
-  <testcase name="amountDepositTest" classname="com.DKP.testcases.CustomerAmountDepositTest" time="11.232"/>
-  <testcase name="amountDepositTest" classname="com.DKP.testcases.CustomerAmountDepositTest" time="12.859"/>
-  <testcase name="amountDepositTest" classname="com.DKP.testcases.CustomerAmountDepositTest" time="14.986"/>
-  <testcase name="amountwithdrawlTest" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" time="14.967"/>
-  <testcase name="amountwithdrawlTest" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" time="21.059"/>
-  <testcase name="amountwithdrawlTest" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" time="23.071"/>
-  <testcase name="customerLogoutTest" classname="com.DKP.testcases.CustomerLogoutTest" time="1.308"/>
+  <testcase name="bankmanagerloginTest" classname="com.DKP.testcases.BankManagerLogin" time="1.385"/>
+  <testcase name="addCustomerTest" classname="com.DKP.testcases.AddCustomer" time="3.404"/>
+  <testcase name="addCustomerTest" classname="com.DKP.testcases.AddCustomer" time="2.685"/>
+  <testcase name="openAccountTest" classname="com.DKP.testcases.OpenAccount" time="3.607"/>
+  <testcase name="Validatecustomers" classname="com.DKP.testcases.Customers" time="3.214"/>
+  <testcase name="customerloginTest" classname="com.DKP.testcases.CustomerLogin" time="3.254"/>
+  <testcase name="amountDepositTest" classname="com.DKP.testcases.CustomerAmountDepositTest" time="12.604"/>
+  <testcase name="amountDepositTest" classname="com.DKP.testcases.CustomerAmountDepositTest" time="13.147"/>
+  <testcase name="amountDepositTest" classname="com.DKP.testcases.CustomerAmountDepositTest" time="15.155"/>
+  <testcase name="amountwithdrawlTest" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" time="14.998"/>
+  <testcase name="amountwithdrawlTest" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" time="21.635"/>
+  <testcase name="amountwithdrawlTest" classname="com.DKP.testcases.CustomerAmountWithdrawlTest" time="23.337"/>
+  <testcase name="customerLogoutTest" classname="com.DKP.testcases.CustomerLogoutTest" time="1.351"/>
 </testsuite>
