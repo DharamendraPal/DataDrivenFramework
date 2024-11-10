@@ -1,8 +1,7 @@
 package com.DKP.utilities;
 
 import java.lang.reflect.Method;
-import java.util.Hashtable;
-
+import java.util.HashMap;
 import org.testng.annotations.DataProvider;
 import com.DKP.base.TestBase;
 
@@ -16,11 +15,11 @@ public class DataUtil extends TestBase {
 	
 		Object[][] data = new Object[rowCount-1][1];
 		
-		Hashtable<String,String> table=null;
-		
+		//Hashtable<String,String> table=null;
+		HashMap<String,String> table=null;
 		for(int rows=2;rows<=rowCount;rows++) {
-			table =new Hashtable<String,String>();
-			
+			//table =new Hashtable<String,String>();
+			table =new HashMap<String,String>();
 			for(int cols=0; cols<colCount; cols++) {
 				table.put(excel.getCellData(sheetName, cols, 1), excel.getCellData(sheetName, cols, rows));
 				data[rows-2][0]=table;	

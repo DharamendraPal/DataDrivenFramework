@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.DKP.base.TestBase;
 import com.aventstack.extentreports.Status;
@@ -15,12 +16,15 @@ import com.DKP.utilities.ExcelReader;
 
 public class BankManagerLogin extends TestBase {
 	
+	
 	@Test()
 	public void bankmanagerloginTest() {
-		
+		SoftAssert softassert = new SoftAssert();
 		String BankHeader=driver.findElement(By.cssSelector(OR.getProperty("BankHeader"))).getText();
 		Assert.assertTrue(BankHeader.equalsIgnoreCase("XYZ Bank"));
 		click("bmlBtn_CSS");
 		Assert.assertTrue(isElementPresent("addCustBtn_CSS"),"Bank Mananger is not logged in");	
+		
+		
 	}
 }

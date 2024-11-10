@@ -1,30 +1,28 @@
 package com.DKP.testcases;
 
-import java.util.Hashtable;
-import java.util.List;
+import java.util.HashMap;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.SkipException;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.DKP.base.TestBase;
-import com.aventstack.extentreports.Status;
-
-
 import com.DKP.extentlisteners.ExtentListeners;
 import com.DKP.utilities.DataUtil;
-import com.DKP.utilities.ExcelReader;
+import com.aventstack.extentreports.Status;
 
 public class CustomerAmountWithdrawlTest extends TestBase {
 	
 	
+	
 	@Test(dataProviderClass = DataUtil.class, dataProvider="dp")
-	public void amountwithdrawlTest(Hashtable<String,String> data) throws InterruptedException 
+	//public void amountwithdrawlTest(Hashtable<String,String> data) throws InterruptedException 
+	public void amountwithdrawlTest(HashMap<String,String> data) throws InterruptedException
 	{
+		SoftAssert softassert = new SoftAssert();
+		
 		if(!(data.get("runmode").equalsIgnoreCase("Y")))
 		{
 			throw new SkipException("Skipping test case execution as the runmode for this test is set as No");

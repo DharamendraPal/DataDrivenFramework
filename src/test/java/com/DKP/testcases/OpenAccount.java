@@ -1,19 +1,25 @@
 package com.DKP.testcases;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.DKP.base.TestBase;
 import com.DKP.utilities.DataUtil;
 
 public class OpenAccount extends TestBase {
+	
+	
 	static String AccountNumber;
 	@Test(dataProviderClass = DataUtil.class, dataProvider="dp")
-	public void openAccountTest(Hashtable<String,String> data) throws InterruptedException {
+	//public void openAccountTest(Hashtable<String,String> data) throws InterruptedException {
+	public void openAccountTest(HashMap<String,String> data) throws InterruptedException {
+		
+		SoftAssert softassert = new SoftAssert();
 		
 		if(!(data.get("runmode").equalsIgnoreCase("Y")))
 		{

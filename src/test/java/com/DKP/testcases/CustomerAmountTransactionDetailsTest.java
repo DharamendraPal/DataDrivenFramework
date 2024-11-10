@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.DKP.base.TestBase;
 import com.DKP.extentlisteners.ExtentListeners;
@@ -19,8 +20,12 @@ import com.DKP.utilities.DataUtil;
 import com.aventstack.extentreports.Status;
 
 public class CustomerAmountTransactionDetailsTest extends TestBase {	
+	
+
+	
 	public void amountTransactionDetailsTest(String TransactionAmount) throws InterruptedException
 	{
+		SoftAssert softassert = new SoftAssert();
 		Thread.sleep(2000);
 		Assert.assertTrue(isElementPresent("TransactionsTAB_XPATH"),"Transactions TAB is not Present");
 		

@@ -1,14 +1,15 @@
 package com.DKP.testcases;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.List;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 import com.DKP.base.TestBase;
 import com.DKP.extentlisteners.ExtentListeners;
 import com.DKP.utilities.DataUtil;
@@ -16,9 +17,13 @@ import com.aventstack.extentreports.Status;
 
 public class Customers extends TestBase{
 	
+	
+	
 	@Test(dataProviderClass = DataUtil.class, dataProvider="dp")
-	public void Validatecustomers(Hashtable<String,String> data) throws InterruptedException {
+	//public void Validatecustomers(Hashtable<String,String> data) throws InterruptedException {
+	public void Validatecustomers(HashMap<String,String> data) throws InterruptedException {
 		
+		SoftAssert softassert = new SoftAssert();
 		if(!(data.get("runmode").equalsIgnoreCase("Y")))
 		{	
 			throw new SkipException("Skipping test case execution as the runmode for this testcase is set as No");

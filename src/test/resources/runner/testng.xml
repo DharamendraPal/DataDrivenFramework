@@ -6,57 +6,53 @@
 		<listener class-name="org.uncommons.reportng.HTMLReporter" />
 		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener class-name="com.DKP.extentlisteners.ExtentListeners" />
+		<listener class-name="com.DKP.listeners.RetryTransformerListerner" />
   </listeners>
+	
 	 	 	 
     <test name="Bank Manager Login Test">
 		<classes>
 			<class name="com.DKP.testcases.BankManagerLogin" />
 		</classes>
-	</test> <!-- Test -->
+	</test>  <!--Test -->
 
 	<test name="Add Customer Test">
 		<classes>
 			<class name="com.DKP.testcases.AddCustomer" />
 		</classes>
-	</test> <!-- Test -->
+	</test>  <!--Test -->
   
   <test name="Open Account Test">
 		<classes>
 			<class name="com.DKP.testcases.OpenAccount" />
 
 		</classes>
-	</test> <!-- Test -->
+	</test>  <!--Test -->
 
-	<test name="Validate Added Customers">
-
+	 <test name="Validate Added Customers">
 		<classes>
 			<class name="com.DKP.testcases.Customers" />
-
 		</classes>
-	</test> <!-- Test -->
+	</test>  <!--Test -->
   
    <test name="Customers Login">
-
 		<classes>
 			<class name="com.DKP.testcases.CustomerLogin" />
-
 		</classes>
 	</test> <!-- Test -->
   
   <test name="Customers Amount Deposit Test">
-
 		<classes>
 			<class name="com.DKP.testcases.CustomerAmountDepositTest" />
 		</classes>
-  </test> <!-- Test -->
+  </test>  <!--Test -->
   
   
    <test name="Customers Amount Withdrawl Test">
-
 		<classes>
 			<class name="com.DKP.testcases.CustomerAmountWithdrawlTest" />
 		</classes>
-	</test> <!-- Test -->
+	</test>  <!--Test -->
   
 
   <!--  <test name="Customers Amount Transaction Details Test">
@@ -66,12 +62,11 @@
 		</classes>
 	</test> --> <!-- Test -->
 	
-	<test name="Customers Logout Test">
-
+	  <test name="Customers Logout Test">
 		<classes>
 			<class name="com.DKP.testcases.CustomerLogoutTest" />
 		</classes>
-	</test> <!-- Test -->
+	</test> <!--Test -->
 	
 	
 </suite> <!-- Suite -->
