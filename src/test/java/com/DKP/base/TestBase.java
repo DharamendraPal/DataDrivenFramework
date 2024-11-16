@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
@@ -17,6 +18,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
@@ -266,10 +269,12 @@ public class TestBase {
 			}
 			
 			/*Code for execution on Remote Machine*/
-			//ChromeOptions opt = new ChromeOptions();
+			ChromeOptions opt = new ChromeOptions();
 			//FirefoxOptions opt=new FirefoxOptions();
 			
 			//driver = new RemoteWebDriver(new URL("http://localhost:4444"),opt);		
+			//driver = new RemoteWebDriver(new URL("http://13.233.238.228:4444"),opt);
+			driver = new RemoteWebDriver(new URL("http://13.201.72.158:4444"),opt);
 			
 			driver.get(Config.getProperty("testsiteurl"));
 			log.info("Navigating to the URL : " + Config.getProperty("testsiteurl"));
