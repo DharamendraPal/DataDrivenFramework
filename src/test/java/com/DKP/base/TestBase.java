@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
@@ -18,7 +19,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -50,7 +50,8 @@ public class TestBase {
 	public static Properties OR = new Properties();
 	public static Properties Config = new Properties();
 	public static FileInputStream fis;
-	public static ExcelReader excel = new ExcelReader(".\\src\\test\\resources\\excel\\testdata.xlsx");
+	//public static ExcelReader excel= new ExcelReader(".\\src\\test\\resources\\excel\\testdata.xlsx");
+	public static ExcelReader excel= new ExcelReader(Paths.get("src", "test", "resources", "excel", "testdata.xlsx").toString());
 	public static WebDriverWait wait;
 	static WebElement dropdown;
 	public static String browser;
@@ -187,10 +188,14 @@ public class TestBase {
 	public void setUp() throws MalformedURLException {
 		if (driver == null) {
 
-			PropertyConfigurator.configure(".\\src\\test\\resources\\properties\\log4j.properties");
+			//PropertyConfigurator.configure(".\\src\\test\\resources\\properties\\log4j.properties");
+			 String log4jPath = Paths.get("src", "test", "resources", "properties", "log4j.properties").toString();
+	         PropertyConfigurator.configure(log4jPath);
 
 			try {
-				fis = new FileInputStream(".\\src\\test\\resources\\properties\\OR.properties");
+				//fis = new FileInputStream(".\\src\\test\\resources\\properties\\OR.properties");
+				String orPropertiesPath = Paths.get("src", "test", "resources", "properties", "OR.properties").toString();
+	            fis = new FileInputStream(orPropertiesPath);
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -204,7 +209,9 @@ public class TestBase {
 			}
 
 			try {
-				fis = new FileInputStream(".\\src\\test\\resources\\properties\\Config.properties");
+				//fis = new FileInputStream(".\\src\\test\\resources\\properties\\Config.properties");
+				 String configPropertiesPath = Paths.get("src", "test", "resources", "properties", "Config.properties").toString();
+		         fis = new FileInputStream(configPropertiesPath);
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
