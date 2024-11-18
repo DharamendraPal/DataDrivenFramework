@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-16T12:31:57Z" name="Data Driven Basics" finished-at="2024-11-16T12:34:40Z" duration-ms="162462">
+    <groups>
+    </groups>
+    <test started-at="2024-11-16T12:31:57Z" name="Bank Manager Login Test" finished-at="2024-11-16T12:31:58Z" duration-ms="479">
+      <class name="com.DKP.testcases.BankManagerLogin">
+        <test-method signature="bankmanagerloginTest()[pri:0, instance:com.DKP.testcases.BankManagerLogin@deb3b60]" started-at="2024-11-16T12:31:57Z" name="bankmanagerloginTest" finished-at="2024-11-16T12:31:58Z" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankmanagerloginTest -->
+      </class> <!-- com.DKP.testcases.BankManagerLogin -->
+    </test> <!-- Bank Manager Login Test -->
+    <test started-at="2024-11-16T12:31:59Z" name="Add Customer Test" finished-at="2024-11-16T12:32:06Z" duration-ms="7020">
+      <class name="com.DKP.testcases.AddCustomer">
+        <test-method signature="addCustomerTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.AddCustomer@62515a47]" started-at="2024-11-16T12:31:59Z" name="addCustomerTest" data-provider="dp" finished-at="2024-11-16T12:32:02Z" duration-ms="3509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method signature="addCustomerTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.AddCustomer@62515a47]" started-at="2024-11-16T12:32:02Z" name="addCustomerTest" data-provider="dp" finished-at="2024-11-16T12:32:06Z" duration-ms="3458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+      </class> <!-- com.DKP.testcases.AddCustomer -->
+    </test> <!-- Add Customer Test -->
+    <test started-at="2024-11-16T12:32:06Z" name="Open Account Test" finished-at="2024-11-16T12:32:11Z" duration-ms="5407">
+      <class name="com.DKP.testcases.OpenAccount">
+        <test-method signature="openAccountTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.OpenAccount@1e6b9a95]" started-at="2024-11-16T12:32:06Z" name="openAccountTest" data-provider="dp" finished-at="2024-11-16T12:32:11Z" duration-ms="5396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, currency=Rupee, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+      </class> <!-- com.DKP.testcases.OpenAccount -->
+    </test> <!-- Open Account Test -->
+    <test started-at="2024-11-16T12:32:11Z" name="Validate Added Customers" finished-at="2024-11-16T12:32:17Z" duration-ms="6115">
+      <class name="com.DKP.testcases.Customers">
+        <test-method signature="Validatecustomers(java.util.HashMap)[pri:0, instance:com.DKP.testcases.Customers@73eb8672]" started-at="2024-11-16T12:32:11Z" name="Validatecustomers" data-provider="dp" finished-at="2024-11-16T12:32:17Z" duration-ms="6109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatecustomers -->
+      </class> <!-- com.DKP.testcases.Customers -->
+    </test> <!-- Validate Added Customers -->
+    <test started-at="2024-11-16T12:32:17Z" name="Customers Login" finished-at="2024-11-16T12:32:22Z" duration-ms="5117">
+      <class name="com.DKP.testcases.CustomerLogin">
+        <test-method signature="customerloginTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerLogin@2fb5fe30]" started-at="2024-11-16T12:32:17Z" name="customerloginTest" data-provider="dp" finished-at="2024-11-16T12:32:22Z" duration-ms="5107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerloginTest -->
+      </class> <!-- com.DKP.testcases.CustomerLogin -->
+    </test> <!-- Customers Login -->
+    <test started-at="2024-11-16T12:32:23Z" name="Customers Amount Deposit Test" finished-at="2024-11-16T12:33:18Z" duration-ms="55404">
+      <class name="com.DKP.testcases.CustomerAmountDepositTest">
+        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@72ab05ed]" started-at="2024-11-16T12:32:23Z" name="amountDepositTest" data-provider="dp" finished-at="2024-11-16T12:32:37Z" duration-ms="14270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountDepositTest -->
+        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@72ab05ed]" started-at="2024-11-16T12:32:37Z" name="amountDepositTest" data-provider="dp" finished-at="2024-11-16T12:32:55Z" duration-ms="17996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountDepositTest -->
+        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@72ab05ed]" started-at="2024-11-16T12:32:55Z" name="amountDepositTest" data-provider="dp" finished-at="2024-11-16T12:33:18Z" duration-ms="23127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountDepositTest -->
+      </class> <!-- com.DKP.testcases.CustomerAmountDepositTest -->
+    </test> <!-- Customers Amount Deposit Test -->
+    <test started-at="2024-11-16T12:33:18Z" name="Customers Amount Withdrawl Test" finished-at="2024-11-16T12:34:35Z" duration-ms="76788">
+      <class name="com.DKP.testcases.CustomerAmountWithdrawlTest">
+        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@41d7b27f]" started-at="2024-11-16T12:33:18Z" name="amountwithdrawlTest" data-provider="dp" finished-at="2024-11-16T12:33:37Z" duration-ms="19109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountwithdrawlTest -->
+        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@41d7b27f]" started-at="2024-11-16T12:33:37Z" name="amountwithdrawlTest" data-provider="dp" finished-at="2024-11-16T12:34:06Z" duration-ms="28404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountwithdrawlTest -->
+        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@41d7b27f]" started-at="2024-11-16T12:34:06Z" name="amountwithdrawlTest" data-provider="dp" finished-at="2024-11-16T12:34:35Z" duration-ms="29265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amountwithdrawlTest -->
+      </class> <!-- com.DKP.testcases.CustomerAmountWithdrawlTest -->
+    </test> <!-- Customers Amount Withdrawl Test -->
+    <test started-at="2024-11-16T12:34:35Z" name="Customers Logout Test" finished-at="2024-11-16T12:34:40Z" duration-ms="4893">
+      <class name="com.DKP.testcases.CustomerLogoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@5b5caf08]" started-at="2024-11-16T12:31:38Z" name="setUp" finished-at="2024-11-16T12:31:57Z" duration-ms="19571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="customerLogoutTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@5b5caf08]" started-at="2024-11-16T12:34:35Z" name="customerLogoutTest" data-provider="dp" finished-at="2024-11-16T12:34:40Z" duration-ms="4886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{runmode=Y, customer=Dharmendra Pal}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@5b5caf08]" started-at="2024-11-16T12:34:40Z" name="tearDown" finished-at="2024-11-16T12:34:40Z" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.DKP.testcases.CustomerLogoutTest -->
+    </test> <!-- Customers Logout Test -->
+  </suite> <!-- Data Driven Basics -->
+</testng-results>
