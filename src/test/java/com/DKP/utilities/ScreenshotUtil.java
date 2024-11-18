@@ -49,7 +49,10 @@ public class ScreenshotUtil extends TestBase {
 
 		File screenshot = ((TakesScreenshot) element).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "\\screenshot\\" + fileName));
+			
+			//FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "\\screenshot\\" + fileName));
+			String basePath2 = System.getProperty("user.dir") + File.separator + "screenshot" ;
+			FileUtils.copyFile(screenshot, new File(basePath2 + File.separator + fileName));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

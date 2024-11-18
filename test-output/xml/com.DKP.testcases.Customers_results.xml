@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="6.109">
+           time="5.960">
   <properties />
   
   
-            <testcase name="Validatecustomers" time="6.109" classname="com.DKP.testcases.Customers" />
+            <testcase name="Validatecustomers" time="5.960" classname="com.DKP.testcases.Customers" />
       
 </testsuite>
