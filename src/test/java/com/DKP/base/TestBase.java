@@ -281,7 +281,7 @@ public class TestBase {
 			
 			//driver = new RemoteWebDriver(new URL("http://localhost:4444"),opt);		
 			//driver = new RemoteWebDriver(new URL("http://13.233.238.228:4444"),opt);
-			driver = new RemoteWebDriver(new URL("http://35.154.241.95:4444"),opt);
+			driver = new RemoteWebDriver(new URL("http://13.127.249.234:4444"),opt);
 			
 			driver.get(Config.getProperty("testsiteurl"));
 			log.info("Navigating to the URL : " + Config.getProperty("testsiteurl"));
