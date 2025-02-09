@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-18T17:45:36Z" name="Data Driven Basics" finished-at="2024-11-18T17:48:04Z" duration-ms="148337">
+  <suite started-at="2025-02-09T17:31:57 IST" name="Data Driven Basics" finished-at="2025-02-09T17:33:54 IST" duration-ms="117303">
     <groups>
     </groups>
-    <test started-at="2024-11-18T17:45:36Z" name="Bank Manager Login Test" finished-at="2024-11-18T17:45:36Z" duration-ms="486">
+    <test started-at="2025-02-09T17:31:57 IST" name="Bank Manager Login Test" finished-at="2025-02-09T17:31:57 IST" duration-ms="354">
       <class name="com.DKP.testcases.BankManagerLogin">
-        <test-method signature="bankmanagerloginTest()[pri:0, instance:com.DKP.testcases.BankManagerLogin@deb3b60]" started-at="2024-11-18T17:45:36Z" name="bankmanagerloginTest" finished-at="2024-11-18T17:45:36Z" duration-ms="452" status="PASS">
+        <test-method signature="bankmanagerloginTest()[pri:0, instance:com.DKP.testcases.BankManagerLogin@790174f2]" started-at="2025-02-09T17:31:57 IST" name="bankmanagerloginTest" finished-at="2025-02-09T17:31:57 IST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bankmanagerloginTest -->
       </class> <!-- com.DKP.testcases.BankManagerLogin -->
     </test> <!-- Bank Manager Login Test -->
-    <test started-at="2024-11-18T17:45:37Z" name="Add Customer Test" finished-at="2024-11-18T17:45:43Z" duration-ms="6518">
+    <test started-at="2025-02-09T17:31:59 IST" name="Add Customer Test" finished-at="2025-02-09T17:32:05 IST" duration-ms="5787">
       <class name="com.DKP.testcases.AddCustomer">
-        <test-method signature="addCustomerTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.AddCustomer@62515a47]" started-at="2024-11-18T17:45:37Z" name="addCustomerTest" data-provider="dp" finished-at="2024-11-18T17:45:40Z" duration-ms="3352" status="PASS">
+        <test-method signature="addCustomerTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.AddCustomer@4b4dd216]" started-at="2025-02-09T17:31:59 IST" name="addCustomerTest" data-provider="dp" finished-at="2025-02-09T17:32:02 IST" duration-ms="2937" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomerTest -->
-        <test-method signature="addCustomerTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.AddCustomer@62515a47]" started-at="2024-11-18T17:45:40Z" name="addCustomerTest" data-provider="dp" finished-at="2024-11-18T17:45:43Z" duration-ms="3115" status="PASS">
+        <test-method signature="addCustomerTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.AddCustomer@4b4dd216]" started-at="2025-02-09T17:32:02 IST" name="addCustomerTest" data-provider="dp" finished-at="2025-02-09T17:32:05 IST" duration-ms="2761" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,9 +39,9 @@
         </test-method> <!-- addCustomerTest -->
       </class> <!-- com.DKP.testcases.AddCustomer -->
     </test> <!-- Add Customer Test -->
-    <test started-at="2024-11-18T17:45:43Z" name="Open Account Test" finished-at="2024-11-18T17:45:47Z" duration-ms="4317">
+    <test started-at="2025-02-09T17:32:05 IST" name="Open Account Test" finished-at="2025-02-09T17:32:08 IST" duration-ms="2883">
       <class name="com.DKP.testcases.OpenAccount">
-        <test-method signature="openAccountTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.OpenAccount@1e6b9a95]" started-at="2024-11-18T17:45:43Z" name="openAccountTest" data-provider="dp" finished-at="2024-11-18T17:45:47Z" duration-ms="4308" status="PASS">
+        <test-method signature="openAccountTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.OpenAccount@620aa4ea]" started-at="2025-02-09T17:32:05 IST" name="openAccountTest" data-provider="dp" finished-at="2025-02-09T17:32:08 IST" duration-ms="2875" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,9 +54,9 @@
         </test-method> <!-- openAccountTest -->
       </class> <!-- com.DKP.testcases.OpenAccount -->
     </test> <!-- Open Account Test -->
-    <test started-at="2024-11-18T17:45:48Z" name="Validate Added Customers" finished-at="2024-11-18T17:45:54Z" duration-ms="5965">
+    <test started-at="2025-02-09T17:32:08 IST" name="Validate Added Customers" finished-at="2025-02-09T17:32:10 IST" duration-ms="2802">
       <class name="com.DKP.testcases.Customers">
-        <test-method signature="Validatecustomers(java.util.HashMap)[pri:0, instance:com.DKP.testcases.Customers@73eb8672]" started-at="2024-11-18T17:45:48Z" name="Validatecustomers" data-provider="dp" finished-at="2024-11-18T17:45:54Z" duration-ms="5960" status="PASS">
+        <test-method signature="Validatecustomers(java.util.HashMap)[pri:0, instance:com.DKP.testcases.Customers@352c308]" started-at="2025-02-09T17:32:08 IST" name="Validatecustomers" data-provider="dp" finished-at="2025-02-09T17:32:10 IST" duration-ms="2791" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,9 +69,9 @@
         </test-method> <!-- Validatecustomers -->
       </class> <!-- com.DKP.testcases.Customers -->
     </test> <!-- Validate Added Customers -->
-    <test started-at="2024-11-18T17:45:54Z" name="Customers Login" finished-at="2024-11-18T17:45:57Z" duration-ms="3640">
+    <test started-at="2025-02-09T17:32:10 IST" name="Customers Login" finished-at="2025-02-09T17:32:14 IST" duration-ms="3459">
       <class name="com.DKP.testcases.CustomerLogin">
-        <test-method signature="customerloginTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerLogin@2fb5fe30]" started-at="2024-11-18T17:45:54Z" name="customerloginTest" data-provider="dp" finished-at="2024-11-18T17:45:57Z" duration-ms="3632" status="PASS">
+        <test-method signature="customerloginTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerLogin@fff25f1]" started-at="2025-02-09T17:32:10 IST" name="customerloginTest" data-provider="dp" finished-at="2025-02-09T17:32:14 IST" duration-ms="3453" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,9 +84,9 @@
         </test-method> <!-- customerloginTest -->
       </class> <!-- com.DKP.testcases.CustomerLogin -->
     </test> <!-- Customers Login -->
-    <test started-at="2024-11-18T17:45:57Z" name="Customers Amount Deposit Test" finished-at="2024-11-18T17:46:49Z" duration-ms="52104">
+    <test started-at="2025-02-09T17:32:14 IST" name="Customers Amount Deposit Test" finished-at="2025-02-09T17:32:53 IST" duration-ms="38967">
       <class name="com.DKP.testcases.CustomerAmountDepositTest">
-        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@72ab05ed]" started-at="2024-11-18T17:45:57Z" name="amountDepositTest" data-provider="dp" finished-at="2024-11-18T17:46:12Z" duration-ms="14675" status="PASS">
+        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@4a9419d7]" started-at="2025-02-09T17:32:14 IST" name="amountDepositTest" data-provider="dp" finished-at="2025-02-09T17:32:25 IST" duration-ms="11046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,7 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amountDepositTest -->
-        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@72ab05ed]" started-at="2024-11-18T17:46:12Z" name="amountDepositTest" data-provider="dp" finished-at="2024-11-18T17:46:29Z" duration-ms="16725" status="PASS">
+        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@4a9419d7]" started-at="2025-02-09T17:32:25 IST" name="amountDepositTest" data-provider="dp" finished-at="2025-02-09T17:32:38 IST" duration-ms="12886" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amountDepositTest -->
-        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@72ab05ed]" started-at="2024-11-18T17:46:29Z" name="amountDepositTest" data-provider="dp" finished-at="2024-11-18T17:46:49Z" duration-ms="20691" status="PASS">
+        <test-method signature="amountDepositTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountDepositTest@4a9419d7]" started-at="2025-02-09T17:32:38 IST" name="amountDepositTest" data-provider="dp" finished-at="2025-02-09T17:32:53 IST" duration-ms="15020" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,9 +121,9 @@
         </test-method> <!-- amountDepositTest -->
       </class> <!-- com.DKP.testcases.CustomerAmountDepositTest -->
     </test> <!-- Customers Amount Deposit Test -->
-    <test started-at="2024-11-18T17:46:49Z" name="Customers Amount Withdrawl Test" finished-at="2024-11-18T17:48:02Z" duration-ms="72659">
+    <test started-at="2025-02-09T17:32:53 IST" name="Customers Amount Withdrawl Test" finished-at="2025-02-09T17:33:53 IST" duration-ms="59848">
       <class name="com.DKP.testcases.CustomerAmountWithdrawlTest">
-        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@41d7b27f]" started-at="2024-11-18T17:46:49Z" name="amountwithdrawlTest" data-provider="dp" finished-at="2024-11-18T17:47:10Z" duration-ms="20575" status="PASS">
+        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@21a5fd96]" started-at="2025-02-09T17:32:53 IST" name="amountwithdrawlTest" data-provider="dp" finished-at="2025-02-09T17:33:08 IST" duration-ms="15184" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amountwithdrawlTest -->
-        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@41d7b27f]" started-at="2024-11-18T17:47:10Z" name="amountwithdrawlTest" data-provider="dp" finished-at="2024-11-18T17:47:37Z" duration-ms="26558" status="PASS">
+        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@21a5fd96]" started-at="2025-02-09T17:33:08 IST" name="amountwithdrawlTest" data-provider="dp" finished-at="2025-02-09T17:33:30 IST" duration-ms="21371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amountwithdrawlTest -->
-        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@41d7b27f]" started-at="2024-11-18T17:47:37Z" name="amountwithdrawlTest" data-provider="dp" finished-at="2024-11-18T17:48:02Z" duration-ms="25516" status="PASS">
+        <test-method signature="amountwithdrawlTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerAmountWithdrawlTest@21a5fd96]" started-at="2025-02-09T17:33:30 IST" name="amountwithdrawlTest" data-provider="dp" finished-at="2025-02-09T17:33:53 IST" duration-ms="23281" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,13 +158,13 @@
         </test-method> <!-- amountwithdrawlTest -->
       </class> <!-- com.DKP.testcases.CustomerAmountWithdrawlTest -->
     </test> <!-- Customers Amount Withdrawl Test -->
-    <test started-at="2024-11-18T17:48:02Z" name="Customers Logout Test" finished-at="2024-11-18T17:48:04Z" duration-ms="1758">
+    <test started-at="2025-02-09T17:33:53 IST" name="Customers Logout Test" finished-at="2025-02-09T17:33:54 IST" duration-ms="1467">
       <class name="com.DKP.testcases.CustomerLogoutTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@5b5caf08]" started-at="2024-11-18T17:45:31Z" name="setUp" finished-at="2024-11-18T17:45:36Z" duration-ms="4774" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@48f5bde6]" started-at="2025-02-09T17:31:50 IST" name="setUp" finished-at="2025-02-09T17:31:57 IST" duration-ms="7285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="customerLogoutTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@5b5caf08]" started-at="2024-11-18T17:48:02Z" name="customerLogoutTest" data-provider="dp" finished-at="2024-11-18T17:48:04Z" duration-ms="1754" status="PASS">
+        <test-method signature="customerLogoutTest(java.util.HashMap)[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@48f5bde6]" started-at="2025-02-09T17:33:53 IST" name="customerLogoutTest" data-provider="dp" finished-at="2025-02-09T17:33:54 IST" duration-ms="1463" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- customerLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@5b5caf08]" started-at="2024-11-18T17:48:04Z" name="tearDown" finished-at="2024-11-18T17:48:04Z" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.DKP.testcases.CustomerLogoutTest@48f5bde6]" started-at="2025-02-09T17:33:54 IST" name="tearDown" finished-at="2025-02-09T17:33:55 IST" duration-ms="419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

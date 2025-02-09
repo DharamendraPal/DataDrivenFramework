@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="52.091">
+           time="38.952">
   <properties />
   
   
-            <testcase name="amountDepositTest" time="16.725" classname="com.DKP.testcases.CustomerAmountDepositTest" />
-                <testcase name="amountDepositTest" time="20.691" classname="com.DKP.testcases.CustomerAmountDepositTest" />
-                <testcase name="amountDepositTest" time="14.675" classname="com.DKP.testcases.CustomerAmountDepositTest" />
+            <testcase name="amountDepositTest" time="11.046" classname="com.DKP.testcases.CustomerAmountDepositTest" />
+                <testcase name="amountDepositTest" time="12.886" classname="com.DKP.testcases.CustomerAmountDepositTest" />
+                <testcase name="amountDepositTest" time="15.020" classname="com.DKP.testcases.CustomerAmountDepositTest" />
       
 </testsuite>

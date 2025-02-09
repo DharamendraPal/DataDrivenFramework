@@ -20,9 +20,7 @@ import com.DKP.utilities.DataUtil;
 import com.aventstack.extentreports.Status;
 
 public class CustomerAmountTransactionDetailsTest extends TestBase {	
-	
-
-	
+	@Test
 	public void amountTransactionDetailsTest(String TransactionAmount) throws InterruptedException
 	{
 		SoftAssert softassert = new SoftAssert();

@@ -26,8 +26,9 @@ public class CustomerLogin extends TestBase {
 		}	
 		
 		click("CusLogBtn_XPATH");
+		Thread.sleep(1000);
 		String BankHeader=driver.findElement(By.cssSelector(OR.getProperty("BankHeader"))).getText();
-		Assert.assertTrue(BankHeader.equalsIgnoreCase("XYZ Bank"));
+		Assert.assertTrue(BankHeader.equalsIgnoreCase("Way2Automation Banking App"));
 		select("customer_CSS",data.get("customer"));
 		click("CusLoginBtn_XPATH");
 		Thread.sleep(2000);

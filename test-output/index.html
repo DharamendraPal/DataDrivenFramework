@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,9 +21,9 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -117,6 +118,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountDepositTest" class="method navigator-link" hash-for-method="amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})">amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountDepositTest" class="method navigator-link" hash-for-method="amountDepositTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})">amountDepositTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -127,22 +133,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountDepositTest" class="method navigator-link" hash-for-method="amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})">amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountWithdrawlTest" class="method navigator-link" hash-for-method="amountwithdrawlTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})">amountwithdrawlTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountWithdrawlTest" class="method navigator-link" hash-for-method="amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})">amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountWithdrawlTest" class="method navigator-link" hash-for-method="amountwithdrawlTest({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal})">amountwithdrawlTest({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountWithdrawlTest" class="method navigator-link" hash-for-method="amountwithdrawlTest({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal})">amountwithdrawlTest({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Data_Driven_Basics" title="com.DKP.testcases.CustomerAmountWithdrawlTest" class="method navigator-link" hash-for-method="amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})">amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -180,6 +181,38 @@
           <div class="suite-Data_Driven_Basics-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.DKP.testcases.CustomerAmountDepositTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})">
+                  </a> <!-- amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal}) -->
+                  <span class="method-name">amountDepositTest</span>
+                  <span class="parameters">({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="amountDepositTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})">
+                  </a> <!-- amountDepositTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal}) -->
+                  <span class="method-name">amountDepositTest</span>
+                  <span class="parameters">({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="amountDepositTest({TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal})">
+                  </a> <!-- amountDepositTest({TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal}) -->
+                  <span class="method-name">amountDepositTest</span>
+                  <span class="parameters">({TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Basics-class-passed -->
+          <div class="suite-Data_Driven_Basics-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.DKP.testcases.CustomerLogoutTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -196,15 +229,23 @@
           <div class="suite-Data_Driven_Basics-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.DKP.testcases.Customers</span>
+              <span class="class-name">com.DKP.testcases.AddCustomer</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Validatecustomers({runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0})">
-                  </a> <!-- Validatecustomers({runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0}) -->
-                  <span class="method-name">Validatecustomers</span>
-                  <span class="parameters">({runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0})</span>
+                  <a name="addCustomerTest({runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0})">
+                  </a> <!-- addCustomerTest({runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0}) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">({runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest({runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0})">
+                  </a> <!-- addCustomerTest({runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0}) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">({runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,14 +253,15 @@
           <div class="suite-Data_Driven_Basics-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.DKP.testcases.BankManagerLogin</span>
+              <span class="class-name">com.DKP.testcases.CustomerLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bankmanagerloginTest">
-                  </a> <!-- bankmanagerloginTest -->
-                  <span class="method-name">bankmanagerloginTest</span>
+                  <a name="customerloginTest({runmode=Y, customer=Dharmendra Pal})">
+                  </a> <!-- customerloginTest({runmode=Y, customer=Dharmendra Pal}) -->
+                  <span class="method-name">customerloginTest</span>
+                  <span class="parameters">({runmode=Y, customer=Dharmendra Pal})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,42 +298,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})">
-                  </a> <!-- amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal}) -->
-                  <span class="method-name">amountwithdrawlTest</span>
-                  <span class="parameters">({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="amountwithdrawlTest({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal})">
                   </a> <!-- amountwithdrawlTest({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal}) -->
                   <span class="method-name">amountwithdrawlTest</span>
                   <span class="parameters">({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Data_Driven_Basics-class-passed -->
-          <div class="suite-Data_Driven_Basics-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.DKP.testcases.AddCustomer</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addCustomerTest({runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0})">
-                  </a> <!-- addCustomerTest({runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0}) -->
-                  <span class="method-name">addCustomerTest</span>
-                  <span class="parameters">({runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addCustomerTest({runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0})">
-                  </a> <!-- addCustomerTest({runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0}) -->
-                  <span class="method-name">addCustomerTest</span>
-                  <span class="parameters">({runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0})</span>
+                  <a name="amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})">
+                  </a> <!-- amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal}) -->
+                  <span class="method-name">amountwithdrawlTest</span>
+                  <span class="parameters">({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -299,31 +317,15 @@
           <div class="suite-Data_Driven_Basics-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.DKP.testcases.CustomerAmountDepositTest</span>
+              <span class="class-name">com.DKP.testcases.Customers</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="amountDepositTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})">
-                  </a> <!-- amountDepositTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal}) -->
-                  <span class="method-name">amountDepositTest</span>
-                  <span class="parameters">({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="amountDepositTest({TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal})">
-                  </a> <!-- amountDepositTest({TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal}) -->
-                  <span class="method-name">amountDepositTest</span>
-                  <span class="parameters">({TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})">
-                  </a> <!-- amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal}) -->
-                  <span class="method-name">amountDepositTest</span>
-                  <span class="parameters">({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})</span>
+                  <a name="Validatecustomers({runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0})">
+                  </a> <!-- Validatecustomers({runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0}) -->
+                  <span class="method-name">Validatecustomers</span>
+                  <span class="parameters">({runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -331,15 +333,14 @@
           <div class="suite-Data_Driven_Basics-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.DKP.testcases.CustomerLogin</span>
+              <span class="class-name">com.DKP.testcases.BankManagerLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="customerloginTest({runmode=Y, customer=Dharmendra Pal})">
-                  </a> <!-- customerloginTest({runmode=Y, customer=Dharmendra Pal}) -->
-                  <span class="method-name">customerloginTest</span>
-                  <span class="parameters">({runmode=Y, customer=Dharmendra Pal})</span>
+                  <a name="bankmanagerloginTest">
+                  </a> <!-- bankmanagerloginTest -->
+                  <span class="method-name">bankmanagerloginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -352,7 +353,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Data Driven Basics&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
@@ -462,60 +463,60 @@ data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'amountwithdrawlTest')
 data.setCell(0, 2, 'com.DKP.testcases.CustomerAmountWithdrawlTest')
-data.setCell(0, 3, 26558);
+data.setCell(0, 3, 23281);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'amountwithdrawlTest')
 data.setCell(1, 2, 'com.DKP.testcases.CustomerAmountWithdrawlTest')
-data.setCell(1, 3, 25516);
+data.setCell(1, 3, 21371);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'amountDepositTest')
-data.setCell(2, 2, 'com.DKP.testcases.CustomerAmountDepositTest')
-data.setCell(2, 3, 20691);
+data.setCell(2, 1, 'amountwithdrawlTest')
+data.setCell(2, 2, 'com.DKP.testcases.CustomerAmountWithdrawlTest')
+data.setCell(2, 3, 15184);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'amountwithdrawlTest')
-data.setCell(3, 2, 'com.DKP.testcases.CustomerAmountWithdrawlTest')
-data.setCell(3, 3, 20575);
+data.setCell(3, 1, 'amountDepositTest')
+data.setCell(3, 2, 'com.DKP.testcases.CustomerAmountDepositTest')
+data.setCell(3, 3, 15020);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'amountDepositTest')
 data.setCell(4, 2, 'com.DKP.testcases.CustomerAmountDepositTest')
-data.setCell(4, 3, 16725);
+data.setCell(4, 3, 12886);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'amountDepositTest')
 data.setCell(5, 2, 'com.DKP.testcases.CustomerAmountDepositTest')
-data.setCell(5, 3, 14675);
+data.setCell(5, 3, 11046);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Validatecustomers')
-data.setCell(6, 2, 'com.DKP.testcases.Customers')
-data.setCell(6, 3, 5960);
+data.setCell(6, 1, 'customerloginTest')
+data.setCell(6, 2, 'com.DKP.testcases.CustomerLogin')
+data.setCell(6, 3, 3453);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'openAccountTest')
-data.setCell(7, 2, 'com.DKP.testcases.OpenAccount')
-data.setCell(7, 3, 4308);
+data.setCell(7, 1, 'addCustomerTest')
+data.setCell(7, 2, 'com.DKP.testcases.AddCustomer')
+data.setCell(7, 3, 2937);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'customerloginTest')
-data.setCell(8, 2, 'com.DKP.testcases.CustomerLogin')
-data.setCell(8, 3, 3632);
+data.setCell(8, 1, 'openAccountTest')
+data.setCell(8, 2, 'com.DKP.testcases.OpenAccount')
+data.setCell(8, 3, 2875);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'addCustomerTest')
-data.setCell(9, 2, 'com.DKP.testcases.AddCustomer')
-data.setCell(9, 3, 3352);
+data.setCell(9, 1, 'Validatecustomers')
+data.setCell(9, 2, 'com.DKP.testcases.Customers')
+data.setCell(9, 3, 2791);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'addCustomerTest')
 data.setCell(10, 2, 'com.DKP.testcases.AddCustomer')
-data.setCell(10, 3, 3115);
+data.setCell(10, 3, 2761);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'customerLogoutTest')
 data.setCell(11, 2, 'com.DKP.testcases.CustomerLogoutTest')
-data.setCell(11, 3, 1754);
+data.setCell(11, 3, 1463);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'bankmanagerloginTest')
 data.setCell(12, 2, 'com.DKP.testcases.BankManagerLogin')
-data.setCell(12, 3, 452);
+data.setCell(12, 3, 287);
 window.suiteTableData['Data_Driven_Basics']= { tableData: data, tableDiv: 'times-div-Data_Driven_Basics'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Data_Driven_Basics">
               </div> <!-- times-div-Data_Driven_Basics -->
             </div> <!-- times-div -->
@@ -551,84 +552,85 @@ return data;
               <div class="chronological-class-name">com.DKP.testcases.BankManagerLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">bankmanagerloginTest</span>
-                <span class="method-start">4802 ms</span>
+                <span class="method-start">7349 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.DKP.testcases.AddCustomer</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addCustomerTest({runmode=Y, firstName=Dharmendra, lastName=Pal, postCode=1234.0})</span>
-                <span class="method-start">5821 ms</span>
+                <span class="method-start">9068 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addCustomerTest({runmode=Y, firstName=Suresh, lastName=Pal , postCode=4212.0})</span>
-                <span class="method-start">9175 ms</span>
+                <span class="method-start">12008 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.DKP.testcases.OpenAccount</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">openAccountTest({runmode=Y, currency=Rupee, customer=Dharmendra Pal})</span>
-                <span class="method-start">12400 ms</span>
+                <span class="method-start">14871 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.DKP.testcases.Customers</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Validatecustomers({runmode=Y, firstName=Suresh, lastName=Pal, postCode=4212.0})</span>
-                <span class="method-start">16770 ms</span>
+                <span class="method-start">17797 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.DKP.testcases.CustomerLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">customerloginTest({runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">22789 ms</span>
+                <span class="method-start">20695 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.DKP.testcases.CustomerAmountDepositTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">amountDepositTest({TransactionAmount=100.0, runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">26475 ms</span>
+                <span class="method-start">24184 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">amountDepositTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">41151 ms</span>
+                <span class="method-start">35235 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">amountDepositTest({TransactionAmount=700.0, runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">57877 ms</span>
+                <span class="method-start">48124 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.DKP.testcases.CustomerAmountWithdrawlTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">amountwithdrawlTest({TransactionAmount=200.0, runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">78639 ms</span>
+                <span class="method-start">63236 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">amountwithdrawlTest({TransactionAmount=400.0, runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">99216 ms</span>
+                <span class="method-start">78424 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">amountwithdrawlTest({TransactionAmount=300.0, runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">125775 ms</span>
+                <span class="method-start">99797 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.DKP.testcases.CustomerLogoutTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">customerLogoutTest({runmode=Y, customer=Dharmendra Pal})</span>
-                <span class="method-start">151356 ms</span>
+                <span class="method-start">123131 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">153163 ms</span>
+                <span class="method-start">124680 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

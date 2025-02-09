@@ -24,14 +24,14 @@ public class ScreenshotUtil extends TestBase {
 
 		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			//FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "\\target\\reports\\" + fileName));
-			//FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "/target/surefire-reports/html/" + fileName));
+			FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "\\target\\reports\\" + fileName));
+			FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "/target/surefire-reports/html/" + fileName));
 			
-			String basePath = System.getProperty("user.dir") + File.separator + "target" + File.separator + "reports";
-			FileUtils.copyFile(screenshot, new File(basePath + File.separator + fileName));
+			//String basePath = System.getProperty("user.dir") + File.separator + "target" + File.separator + "reports";
+			//FileUtils.copyFile(screenshot, new File(basePath + File.separator + fileName));
 			
-			String basePath1 = System.getProperty("user.dir") + File.separator + "target" + File.separator + "surefire-reports"+ File.separator + "html";
-			FileUtils.copyFile(screenshot, new File(basePath1 + File.separator + fileName));
+			//String basePath1 = System.getProperty("user.dir") + File.separator + "target" + File.separator + "surefire-reports"+ File.separator + "html";
+			//FileUtils.copyFile(screenshot, new File(basePath1 + File.separator + fileName));
 
 			
 		} catch (IOException e) {

@@ -50,8 +50,8 @@ public class TestBase {
 	public static Properties OR = new Properties();
 	public static Properties Config = new Properties();
 	public static FileInputStream fis;
-	//public static ExcelReader excel= new ExcelReader(".\\src\\test\\resources\\excel\\testdata.xlsx");
-	public static ExcelReader excel= new ExcelReader(Paths.get("src", "test", "resources", "excel", "testdata.xlsx").toString());
+	public static ExcelReader excel= new ExcelReader(".\\src\\test\\resources\\excel\\testdata.xlsx");
+	//public static ExcelReader excel= new ExcelReader(Paths.get("src", "test", "resources", "excel", "testdata.xlsx").toString());
 	public static WebDriverWait wait;
 	static WebElement dropdown;
 	public static String browser;
@@ -188,14 +188,14 @@ public class TestBase {
 	public void setUp() throws MalformedURLException {
 		if (driver == null) {
 
-			//PropertyConfigurator.configure(".\\src\\test\\resources\\properties\\log4j.properties");
-			 String log4jPath = Paths.get("src", "test", "resources", "properties", "log4j.properties").toString();
-	         PropertyConfigurator.configure(log4jPath);
+			PropertyConfigurator.configure(".\\src\\test\\resources\\properties\\log4j.properties");
+			 //String log4jPath = Paths.get("src", "test", "resources", "properties", "log4j.properties").toString();
+	         //PropertyConfigurator.configure(log4jPath);
 
 			try {
-				//fis = new FileInputStream(".\\src\\test\\resources\\properties\\OR.properties");
-				String orPropertiesPath = Paths.get("src", "test", "resources", "properties", "OR.properties").toString();
-	            fis = new FileInputStream(orPropertiesPath);
+				fis = new FileInputStream(".\\src\\test\\resources\\properties\\OR.properties");
+				//String orPropertiesPath = Paths.get("src", "test", "resources", "properties", "OR.properties").toString();
+	            //fis = new FileInputStream(orPropertiesPath);
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -209,9 +209,9 @@ public class TestBase {
 			}
 
 			try {
-				//fis = new FileInputStream(".\\src\\test\\resources\\properties\\Config.properties");
-				 String configPropertiesPath = Paths.get("src", "test", "resources", "properties", "Config.properties").toString();
-		         fis = new FileInputStream(configPropertiesPath);
+				fis = new FileInputStream(".\\src\\test\\resources\\properties\\Config.properties");
+				 //String configPropertiesPath = Paths.get("src", "test", "resources", "properties", "Config.properties").toString();
+		         //fis = new FileInputStream(configPropertiesPath);
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -283,7 +283,7 @@ public class TestBase {
 			//driver = new RemoteWebDriver(new URL("http://13.233.238.228:4444"),opt);
 			//driver = new RemoteWebDriver(new URL("http://13.127.249.234:4444"),opt);
 			//driver = new RemoteWebDriver(new URL("http://15.206.73.241:4444/wd/hub"),opt);
-			driver = new RemoteWebDriver(new URL("http://13.232.252.79:4444/wd/hub"),opt);
+			//driver = new RemoteWebDriver(new URL("http://13.232.252.79:4444/wd/hub"),opt);
 			
 			driver.get(Config.getProperty("testsiteurl"));
 			log.info("Navigating to the URL : " + Config.getProperty("testsiteurl"));

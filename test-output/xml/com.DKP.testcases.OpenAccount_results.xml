@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.308">
+           time="2.875">
   <properties />
   
   
-            <testcase name="openAccountTest" time="4.308" classname="com.DKP.testcases.OpenAccount" />
+            <testcase name="openAccountTest" time="2.875" classname="com.DKP.testcases.OpenAccount" />
       
 </testsuite>
