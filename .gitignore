@@ -1,1 +1,4 @@
-.\src\test\java\com\DKP\rough
+./src/test/java/com/DKP/rough/
+./src/test/resources/logs/
+./test-output/
+./target/
