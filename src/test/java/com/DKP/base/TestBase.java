@@ -284,12 +284,12 @@ public class TestBase {
 			//driver = new RemoteWebDriver(new URL("http://13.127.249.234:4444"),opt);
 			//driver = new RemoteWebDriver(new URL("http://15.206.73.241:4444/wd/hub"),opt);
 			//driver = new RemoteWebDriver(new URL("http://13.232.252.79:4444/wd/hub"),opt);
-			driver = new RemoteWebDriver(new URL("http://13.232.185.116:4444"),opt);
+			//driver = new RemoteWebDriver(new URL("http://13.232.185.116:4444"),opt);
 			
 			driver.get(Config.getProperty("testsiteurl"));
 			log.info("Navigating to the URL : " + Config.getProperty("testsiteurl"));
-			DbManager.setMysqlDbConnection();
-			log.info("Database connection established");
+			//DbManager.setMysqlDbConnection();
+			//log.info("Database connection established");
 			driver.manage().window().maximize();
 			driver.manage().timeouts()
 					.implicitlyWait(Duration.ofSeconds(Integer.parseInt(Config.getProperty("implicit.wait"))));

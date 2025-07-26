@@ -135,7 +135,7 @@ public class ExtentListeners extends TestBase implements ITestListener,ISuiteLis
 
 	@Override
 	public void onFinish(ISuite suite) {
-		MonitoringMail mail = new MonitoringMail();
+		/* MonitoringMail mail = new MonitoringMail();
 		 
 		try {
 			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
@@ -154,7 +154,7 @@ public class ExtentListeners extends TestBase implements ITestListener,ISuiteLis
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		*/
 	}
 	
 	public void onFinish(ITestContext context) {

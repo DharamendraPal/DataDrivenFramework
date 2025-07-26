@@ -38,11 +38,10 @@ public class MonitoringMail
 	     props.setProperty("mail.smtp.socketFactory.port", "465");
 	     props.setProperty("mail.imap.ssl.enable", "true");
 
-		
-		  Authenticator auth = new SMTPAuthenticator();
-		    Session session = Session.getDefaultInstance(props, auth);
-
-		    session.setDebug(debug);
+		/*
+		  //Authenticator auth = new SMTPAuthenticator();
+		  //Session session = Session.getDefaultInstance(props, auth);
+		  //session.setDebug(debug);
 		
 		try
 		{
@@ -84,12 +83,12 @@ public class MonitoringMail
 		catch (MessagingException mex)
 		{
             mex.printStackTrace();
-        }		
+        }*/		
 	} 
 	
+	/*
 	private class SMTPAuthenticator extends javax.mail.Authenticator
 	{
-
 	    public PasswordAuthentication getPasswordAuthentication()
 	    {
 	        String username = TestConfig.from;
@@ -97,5 +96,5 @@ public class MonitoringMail
 	        return new PasswordAuthentication(username, password);
 	    }
 	}
-	
+	*/
 }

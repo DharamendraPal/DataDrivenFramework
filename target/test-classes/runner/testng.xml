@@ -25,7 +25,6 @@
   <test name="Open Account Test">
 		<classes>
 			<class name="com.DKP.testcases.OpenAccount" />
-
 		</classes>
 	</test>  <!--Test -->
 
